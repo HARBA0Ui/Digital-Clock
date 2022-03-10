@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5em;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    background: #1A1A40;
+    color: white;
+}
+
+.title{
+    font-family: 'Dancing Script', cursive;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 1em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5; 
+    width: 600px;
+
+    background: #07071d;
+    padding: 1.5rem 0rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5) ;
+}
+
+span{
+    margin: 0 .5rem;
+}
+
+div, span{
+    text-shadow: 0 0 8px #fff,
+    0 0 20px #7A0BC0, 
+    0 0 30px #7A0BC0, 
+    0 0 50px #7A0BC0,
+    0 0 70px #7A0BC0,
+    0 0 90px #7A0BC0;
+}
+
+
+@media screen and (max-width : 620px){
+    body{
+        font-size: 3em;
+    }
+    .container{
+        width: 400px;
+    }
+}
+@media screen and (max-width : 400px){
+    body{
+        font-size: 1.5em;
+    }
+    .container{
+        width: 300px;
+    }
+}
